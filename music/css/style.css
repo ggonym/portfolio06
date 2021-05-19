@@ -1,0 +1,121 @@
+
+
+@charset "UTF-8";
+/*폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+
+/*구글 머티리얼 아이콘*/
+
+
+*{margin: 0 ; padding: 0; box-sizing: border-box; }
+a { text-decoration: none; color: #000;}
+img {display: block;}
+ul,ol, li { list-style: none;}
+
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/*사이드바*/
+#sidebar { background-color: #fff; height: 900px; ;}
+#sidebar .logo {padding: 37px 0 0 61px; box-sizing: border-box;}
+#sidebar .sidebar-nav { font-family: 'Montserrat'; }
+#sidebar .sidebar-nav ul {}
+#sidebar .sidebar-nav .navtit { font-weight: 400; font-family: 'Montserrat'; 
+  line-height: 22px; color: rgba(36, 36, 46, 1);}
+#sidebar .sidebar-nav .navmenu {position:relative; color: rgba(77, 77, 86, 1); font-family: 'Montserrat'; width: 260px; height: 46px;
+  font-family: 'Montserrat' ; font-weight: regular; 
+} 
+  #sidebar .sidebar-nav .navmenu:hover { width: 260px; height: 46px;
+    background-color:  #F0F0F5;
+  } 
+  #sidebar .sidebar-nav .navmenu:hover span{
+    display: block; position: absolute; top:0; right: 0;
+    width: 2px; height: 46px; background-color: #4343EF; 
+  }
+  #sidebar .sidebar-nav .navtit a { padding-left: 42px; box-sizing: border-box;}
+  /* #sidebar .sidebar-nav .navtit:hover a { color: rgba(67, 67, 239, 1);} */
+  #sidebar .sidebar-nav .navmenu i { font-size: 16px; color:  #787887; padding:12px 10px 0 0; 
+  box-sizing: border-box;} 
+  
+  #sidebar .sidebar-nav .navmenu:hover i { color: rgba(67, 67, 239, 1); } 
+  #sidebar .sidebar-nav .navmenu a {
+    padding-left: 42px; box-sizing: border-box;
+  }
+  #sidebar .sidebar-nav .navmenu:hover a {color:rgba(67, 67, 239, 1); font-weight: 600; }
+
+
+/*오른쪽 컨테이너*/
+
+.rcontainer nav ul li a { font-family: 'Montserrat'; font-weight: 500; line-height: 22px;
+  color: rgba(77, 77, 86, 1); 
+
+}
+.rcontainer nav ul { display: flex; padding-left: 40px; box-sizing: border-box; padding-top: 36px;}
+.rcontainer nav ul li { padding: 0 14px; box-sizing: border-box; font-weight: 500; font-size: 16px; font-family: 'Montserrat';}
+.rcontainer nav ul li:first-child { padding-left: 0;}
+.rcontainer nav ul li a { position: relative;}
+.rcontainer nav ul li:hover a {
+  color: rgba(67, 67, 239, 1);
+}
+
+/*밑줄 만들기*/
+.rcontainer nav ul li a:hover:after {
+  color: rgba(67, 67, 239, 1); font-family: 'Montserrat'; font-weight: 500; 
+  content: "";
+  display: block;
+  width: 12px;
+  margin: 0 auto;
+  border-bottom: 2px solid #4343EF;
+  
+}
+
+/*검색창*/
+.rcontainer .search { position: relative; width: 400px; height: 50px; margin-top:24px;  margin-left: 50px; box-sizing: border-box;
+}
+.rcontainer input {  width: 400px; height: 50px; border-radius: 16px;
+background-color: #F0F0F5; text-indent: 20px; border: none;
+
+}
+.rcontainer input:focus{outline: none;}
+
+.rcontainer input::placeholder { font-family: 'Montserrat'; font-weight: 400; 
+color:rgba(120, 120, 135, 1);  }
+.rcontainer .search a i { position: absolute; top: 16px; right: 16px; font-size: 18px;
+color: #B3B3BC;}
+
+
+
+.rcontainer .profile select { font-weight: bold; font-family: Montserrat; 
+appearance: none;
+background-image: url("../images/selectarrow.png") ;
+background-repeat: no-repeat;
+background-position: 93px center ; 
+
+}
+
+ 
+

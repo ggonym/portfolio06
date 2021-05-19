@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUSIC</title>
+<!--RESET CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+  
+  <!--CSS-->
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <link rel="stylesheet" href="./css/layout.css">
+  
+  <!-- 아이콘 링크-->  
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/common.css">
+
+  <!--swiper-->
+  <!-- Swiper -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+ <script src="./js/swiper.js"></script> 
+</head>
+
+<body>
+
+  <div id="wrap">
+  <div id="sidebar" class="sidenav">
+
+    <div class="logo">
+      <a href="/javascript(0)"><img src="./images/logo.png" alt="로고" /></a>
+    </div>
+
+    <div class="sidebar-nav">
+      <nav>
+        <ul>
+          <li class="navtit f18 "><a href="/javascript(0)">MENU</a></li>
+           
+              <li class="navmenu f16"><a href="/javascript(0)"><i class="material-icons">  home </i>Discover</a><span></span></li>
+              <li class="navmenu f16 " ><a href="/javascript(0)"><i class="fas fa-compass"></i>Explorer</a><span></span></li>
+              <li class="navmenu f16 " ><a href="/javascript(0)"><i class="material-icons">search  </i>Search</a><span></span></li>      
+
+          <li class="navtit f18 " ><a href="/javascript(0)" class="navtit">LIBRARY</a></li>      
+            
+              <li class="navmenu f16 " ><a href="/javascript(0)"><i class="fas fa-music"></i>My Music</a><span></span></li>
+              <li class="navmenu f16 "><a href="/javascript(0)"><i class="material-icons">    collections_bookmark </i>Albums</a><span></span></li>
+              <li class="navmenu f16 " ><a href="/javascript(0)"><i class="fas fa-user"></i>Artists</a><span></span></li>
+            
+
+          <li class="navtit f18 " ><a href="/javascript(0)">PLAYLIST</a></li>
+            
+              <li class="navmenu f16" ><a href="/javascript(0)"><i class="material-icons">headphones </i>Cover</a><span></span></li>
+              <li class="navmenu f16 " ><a href="/javascript(0)"><i class="material-icons">favorite</i>Favorites</a><span></span></li>
+              <li class="navmenu f16 " ><a href="/javascript(0)"><i class="material-icons">share</i>Shared</a><span></span></li>
+              <li class="navmenu f16 " ><a href="/javascript(0)"><i class="material-icons"> move_to_inbox </i>Downloads</a><span></span></li>
+         
+
+          <li class="navtit f18 " ><a href="/javascript(0)">OTHERS</a></li>
+            
+              <li class="navmenu f16" ><a href="/javascript(0)"><i class="material-icons">settings </i>Settings</a><span></span></li>
+              <li class="navmenu f16"><a href="/javascript(0)"><i class="material-icons">logout </i>Logout</a><span></span></li>
+            
+         
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+
+  <!--오른쪽 컨테이너-->
+  <div class="rcontainer">
+    <nav>
+      <ul>
+        <li class="f16"><a name=".discover">Music<span></span></a></li>
+        <li class="f16" ><a href="/javascript(0)">Podcast</a></li>
+        <li class="f16"><a href="/javascript(0)">Radio</a></li>
+        <li class="f16"><a href="/javascript(0)">Live</a></li>
+      </ul>
+    </nav>
+
+    <div class="search">
+     <a href="/javascript"> <i class="material-icons">search</i></a>
+      <input type="search" id="serach" name="search" placeholder="Search..."/>
+    </div>
+
+    <div class="utility">
+      <a href="/javascript(0)">
+        <i class="far fa-heart"></i>
+        </a>
+
+      <a href="/javascript(0)">
+        <img src="./images/notif.png" alt="알림">
+        </a>
+      
+      <div class="profile">
+        <div class="thumbnail">
+          <img src="https://via.placeholder.com/42X42" alt="샘플이미지">
+        </div>
+        <select>
+         
+          <option class="f16"> Ryan Azhari</option>
+        </select>
+      </div>
+
+    </div>
+     <!--오른쪽 컨테이너 닫기-->
+  </div> 
+
+<!-- discover 콘텐츠영역-->
+    <div class="discover">
+      
+      <!-- Slider main container -->
+<div class="swiper-container">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+ 
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+<div class="topartist">
+
+</div>
+<div class="top100">
+
+</div>
+
+<div class="topcollection">
+
+</div>
+
+<!--discover끝-->
+    </div>
+
+  
+
+  <!--wrap-->
+</div>
+</body>
+</html>

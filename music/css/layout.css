@@ -1,0 +1,51 @@
+
+#wrap { position: relative; max-width: 1440px;}
+#sidebar { position: absolute;   width: 260px;   height: 900px;   left: 0px;   top: 0px;}
+#sidebar .logo {height: 124px; }
+
+  /*오른쪽 컨테이너 탑*/
+.rcontainer { position: absolute; left: 260px; top:0; /*max-width: 1180px; */ height:98px; overflow-x: hidden;
+  background-color: #fff; display: flex;}
+
+
+ 
+  .rcontainer .utility {
+    display: flex;
+  }
+  .rcontainer .utility a {
+    display: block;
+    padding: 41px 16px;
+    box-sizing: border-box;
+  }
+  .rcontainer .utility a  i {
+    font-size: 18px;
+    color: #B3B3BC;
+  }
+  .rcontainer .utility .profile {
+    padding-left: 16px;
+    box-sizing: border-box;
+    display: flex;
+    
+  }
+  .rcontainer .utility .profile .thumbnail {
+   padding: 28px 0 16px 0;
+  }
+  .rcontainer .utility .profile .thumbnail img {
+    width: 42px;
+    height: 42px;
+    border-radius: 42px;
+ 
+  }
+  .rcontainer .utility .profile select {
+    margin-left: 10px;
+    border: none;
+    /*appearance: none;*/
+    width: 125px;
+    height: 20px;
+    border: 0px;
+    outline: 0px;
+    margin-top: 39px;
+  }
+  
+  /*discover 콘텐츠영역*/
+  .discover { width: 1140px; height: 308px; background-color: tomato;}
