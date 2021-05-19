@@ -1,42 +1,42 @@
 
-#wrap { position: relative; max-width: 1440px;}
+#wrap { position: relative; /*min-width: 1440px; */display: flex;  }
 #sidebar { position: absolute;   width: 260px;   height: 900px;   left: 0px;   top: 0px;}
 #sidebar .logo {height: 124px; }
 
-  /*오른쪽 컨테이너 탑*/
-.rcontainer { position: absolute; left: 260px; top:0; /*max-width: 1180px; */ height:98px; overflow-x: hidden;
-  background-color: #fff; display: flex;}
+  /*컨테이너 탑*/
+.topcontainer { position: absolute; left: 260px; top:0; /*max-width: 1180px; */ height:98px; overflow-x: hidden;
+  background-color: #f9f9fb; display: flex;}
 
 
  
-  .rcontainer .utility {
-    display: flex;
+  .topcontainer .utility {
+    display: flex; margin-left: 32px;
   }
-  .rcontainer .utility a {
+  .topcontainer .utility a {
     display: block;
     padding: 41px 16px;
     box-sizing: border-box;
   }
-  .rcontainer .utility a  i {
+  .topcontainer .utility a  i {
     font-size: 18px;
     color: #B3B3BC;
   }
-  .rcontainer .utility .profile {
-    padding-left: 16px;
+  .topcontainer .utility .profile {
+    padding-left: 45px;
     box-sizing: border-box;
     display: flex;
     
   }
-  .rcontainer .utility .profile .thumbnail {
+  .topcontainer .utility .profile .thumbnail {
    padding: 28px 0 16px 0;
   }
-  .rcontainer .utility .profile .thumbnail img {
+  .topcontainer .utility .profile .thumbnail img {
     width: 42px;
     height: 42px;
     border-radius: 42px;
  
   }
-  .rcontainer .utility .profile select {
+  .topcontainer .utility .profile select {
     margin-left: 10px;
     border: none;
     /*appearance: none;*/
@@ -45,7 +45,112 @@
     border: 0px;
     outline: 0px;
     margin-top: 39px;
+    background-color: #f9f9fb;
   }
   
+/*ccontainer*/
+.ccontainer { /*width: 788px; */  width:1180px; height: 5000px;  margin-left:260px; background-color: #e5e5e5;
+  /* position: absolute; top: 98px; left: 260px;*/ margin-top: 98px;  display: flex; } 
+
+
   /*discover 콘텐츠영역*/
-  .discover { width: 1140px; height: 308px; background-color: tomato;}
+  .discover { width: 788px; height: auto; }
+ 
+
+  /*스와이퍼*/
+  .ccontainer .discover .swiper-container { width: 724px; height: 308px;background: burlywood;
+  margin-top: 32px; border-radius: 24px;}
+
+
+  /*탑아티스트영역*/
+  .ccontainer .discover .topartist { width: 724px; height: 221px; border-radius: 24px; background-color: #fff;
+  margin-left: 32px; margin-top: 32px; }
+  .ccontainer .discover .topartist .topartist-inner{
+    clear: both;
+  }
+  .ccontainer .discover .topartist .topartist-inner .topartist-tit {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ccontainer .discover .topartist .topartist-inner .toplistbox-wrap { display: flex; justify-content: center; }
+  .ccontainer .discover .topartist .topartist-inner .topartist-tit h2 {
+    padding-left: 32px; padding-top: 24px ;box-sizing: border-box;
+    font-family: 'Montserrat'; font-weight: 600;
+    color:  #24242E;
+  }
+  .ccontainer .discover .topartist .topartist-inner .topartist-tit a {
+    padding-top: 24px;
+    padding-right: 32px;
+    box-sizing: border-box;
+    font-family: 'Montserrat'; font-weight: 400;
+    color:#787887;
+  }
+  .ccontainer .discover .topartist .topartist-inner .toplist-box {
+    width: 95px;
+    height: 136px;
+    
+    box-sizing: border-box;      
+    margin-top: 16px;
+  }
+  .ccontainer .discover .topartist .topartist-inner .toplist-box .toplist-img {
+    width: 90px;
+    height: 90px;
+    background-color: #d6d6d6;
+    border-radius: 20px;
+    margin-left: 2px;
+  }
+  .ccontainer .discover .topartist .topartist-inner .toplist-box .topartist-cont {
+    margin-top: 6px;
+
+  }
+  
+  /*탑100순위*/
+  .toplist { width: 392px; height: 802px; background-color: #fff; 
+    border-radius: 24px 0 0 ;
+   }
+
+
+   /*탑콜렉션 , 탑유형*/
+   .ccontainer .topcolgen { width: 724px; height: 318px; margin-top: 32px; margin-left: 32px;
+  display: flex;}
+  .ccontainer .topcolgen div { width: 354px; /*height: 221px;*/ background-color: #fff; border-radius: 20px;}
+  .ccontainer .topcolgen .topcoll { }
+  .ccontainer .topcolgen .genre {margin-left: 16px; }
+
+  /*타이틀*/
+  .ccontainer .topcolgen .topcolgen-tit {  display: flex;
+    justify-content: space-between;}
+  .ccontainer .topcolgen  .topcolgen-tit h2 {
+    padding-left: 32px; padding-top: 24px ;box-sizing: border-box;
+    font-family: 'Montserrat'; font-weight: 600;
+    color:  #24242E;
+  }
+  .ccontainer .topcolgen  .topcolgen-tit a {
+    padding-top: 24px;
+    padding-right: 32px;
+    box-sizing: border-box;
+    font-family: 'Montserrat'; font-weight: 400;
+    color:#787887;
+  }
+
+  .ccontainer .topcolgen .topcoll {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  .ccontainer .topcolgen .topcolimg-flex .topcolbox {
+    width: 306px;
+    height: 94px;
+    
+    margin: 0 auto;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .ccontainer .topcolgen .topcolimg-flex .topcolbox div {
+    width: 94px; height: 94px; border-radius: 16px; background-color: #e5e5e5;
+  }
+ 
+
+  /**/

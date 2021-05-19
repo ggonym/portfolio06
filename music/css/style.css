@@ -68,22 +68,22 @@ ul,ol, li { list-style: none;}
   #sidebar .sidebar-nav .navmenu:hover a {color:rgba(67, 67, 239, 1); font-weight: 600; }
 
 
-/*오른쪽 컨테이너*/
+/*탑 컨테이너*/
 
-.rcontainer nav ul li a { font-family: 'Montserrat'; font-weight: 500; line-height: 22px;
+.topcontainer nav ul li a { font-family: 'Montserrat'; font-weight: 500; line-height: 22px;
   color: rgba(77, 77, 86, 1); 
 
 }
-.rcontainer nav ul { display: flex; padding-left: 40px; box-sizing: border-box; padding-top: 36px;}
-.rcontainer nav ul li { padding: 0 14px; box-sizing: border-box; font-weight: 500; font-size: 16px; font-family: 'Montserrat';}
-.rcontainer nav ul li:first-child { padding-left: 0;}
-.rcontainer nav ul li a { position: relative;}
-.rcontainer nav ul li:hover a {
+.topcontainer nav ul { display: flex; padding-left: 40px; box-sizing: border-box; padding-top: 36px;}
+.topcontainer nav ul li { padding: 0 14px; box-sizing: border-box; font-weight: 500; font-size: 16px; font-family: 'Montserrat';}
+.topcontainer nav ul li:first-child { padding-left: 0;}
+.topcontainer nav ul li a { position: relative;}
+.topcontainer nav ul li:hover a {
   color: rgba(67, 67, 239, 1);
 }
 
 /*밑줄 만들기*/
-.rcontainer nav ul li a:hover:after {
+.topcontainer nav ul li a:hover:after {
   color: rgba(67, 67, 239, 1); font-family: 'Montserrat'; font-weight: 500; 
   content: "";
   display: block;
@@ -94,22 +94,22 @@ ul,ol, li { list-style: none;}
 }
 
 /*검색창*/
-.rcontainer .search { position: relative; width: 400px; height: 50px; margin-top:24px;  margin-left: 50px; box-sizing: border-box;
+.topcontainer .search { position: relative; width: 400px; height: 50px; margin-top:24px;  margin-left: 93px; box-sizing: border-box;
 }
-.rcontainer input {  width: 400px; height: 50px; border-radius: 16px;
+.topcontainer input {  width: 400px; height: 50px; border-radius: 16px;
 background-color: #F0F0F5; text-indent: 20px; border: none;
 
 }
-.rcontainer input:focus{outline: none;}
+.topcontainer input:focus{outline: none;}
 
-.rcontainer input::placeholder { font-family: 'Montserrat'; font-weight: 400; 
+.topcontainer input::placeholder { font-family: 'Montserrat'; font-weight: 400; 
 color:rgba(120, 120, 135, 1);  }
-.rcontainer .search a i { position: absolute; top: 16px; right: 16px; font-size: 18px;
+.topcontainer .search a i { position: absolute; top: 16px; right: 16px; font-size: 18px;
 color: #B3B3BC;}
 
 
 
-.rcontainer .profile select { font-weight: bold; font-family: Montserrat; 
+.topcontainer .profile select { font-weight: bold; font-family: Montserrat; 
 appearance: none;
 background-image: url("../images/selectarrow.png") ;
 background-repeat: no-repeat;
@@ -117,5 +117,46 @@ background-position: 93px center ;
 
 }
 
+/*x탑아티스트영역*/
+.ccontainer .discover .topartist .topartist-inner .toplist-box .topartist-cont a:first-child {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  display: block;
+  /* white-space: nowrap; */
  
+  color: #24242E;
+  text-align: center;
+ }
+ .ccontainer .discover .topartist .topartist-inner .toplist-box .topartist-cont a:last-child {
+   font-family: 'Montserrat';
+   font-weight: 400;
+   white-space: nowrap;
+   text-align: center;
+   display: inline-block;
+   margin-left: 15px;
+   color: #4D4D56;
+ }
 
+ 
+ .ccontainer .discover .topartist .topartist-inner .toplist-box {
+   margin:0  11px 10px;
+ }
+
+ /*탑콜렉션, 탑유형*/
+ .ccontainer .topcolgen .topcolimg-flex .topcolbox .topcol-video video {
+   width: 94px;
+   height:  94px;
+   z-index: 1;
+ }
+
+ .ccontainer .topcolgen .topcolimg-flex .topcolbox .topcol-video  a {
+/*display: block;
+   width: 24px;
+   height: 24px;
+   border: 7px;
+   background-color: chartreuse;
+   margin: 0 10px 10px 0;
+   z-index: 10;*/
+   /* background: rgba(249, 249, 251, 0.4); */
+   /* backdrop-filter: blur(4px); */
+ }
